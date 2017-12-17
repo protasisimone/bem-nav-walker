@@ -2,8 +2,23 @@
 
 Say goodbye to badly named menus in Wordpress and say hello to Wordpress BEM Menus!
 
-To use simply drop the contents of wp_bem_menu.php into your functions.php file.
+**This is fork of [Wordpres-Bem-Menu](https://github.com/roikles/Wordpress-Bem-Menu), we only changed structure and added it to packagist for composer installs.**
 
+
+## Instalation
+~~To use simply drop the contents of src/wp_bem_menu.php into your functions.php file.~~
+
+Download src/wp_bem_menu.php and save it to your theme folder. In functions.php use include for this file.
+
+#### Composer way
+
+Use cmd and navigate to your themes folder. Then use this command:
+
+```
+composer require bicepsdigital/wordpress-bem-menu
+```
+
+and don't forget to include composer's autoload from functions.php
 
 ## Usage
 
