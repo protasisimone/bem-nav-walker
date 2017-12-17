@@ -1,4 +1,5 @@
 # Wordpress BEM Menu
+[![Packagist](https://img.shields.io/packagist/v/bicepsdigital/Wordpress-Bem-Menu.svg)](https://packagist.org/packages/bicepsdigital/class-name-parser)
 
 Say goodbye to badly named menus in Wordpress and say hello to Wordpress BEM Menus!
 
