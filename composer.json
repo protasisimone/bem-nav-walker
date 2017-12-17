@@ -1,0 +1,27 @@
+{
+  "name": "bicepsdigital/wordpress-bem-menu",
+  "keywords": [
+    "wordpress",
+    "bem",
+    "menu",
+    "navigation"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rory Ashford-Bentley",
+      "email": "info@roryashfordbentley.me",
+      "homepage": "http://roryashfordbentley.me",
+      "role": "Developer"
+    },
+    {
+      "name": "Tomas Lysek",
+      "email": "tomas@bicepsdigital.com",
+      "homepage": "http://www.bicepsdigital.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": ["src/wp_bem_menu.php"]
+  }
+}
