@@ -42,7 +42,7 @@ Please note that these modifier classes are not inherited by descendants. this i
 
 ## html output
 ```html
-<ul class="my-menu my-menu--my-modifier">
+<ul class="my-menu__list my-menu__list--my-modifier">
     <li class="my-menu__item  my-menu__item--active  my-menu__item--78"><a class="my-menu__link" href="#">Home</a></li>
     <li class="my-menu__item  my-menu__item--79"><a class="my-menu__link" href="#">Page 2</a></li>
     <li class="my-menu__item  my-menu__item--84"><a class="my-menu__link" href="#">Page 3</a></li>
