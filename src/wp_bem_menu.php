@@ -19,9 +19,9 @@ class walker_texas_ranger extends Walker_Nav_Menu {
             'item' => '__item',
             'link' => '__link',
             'parent_item' => '__item--parent',
-            'active_item' => '__item--active',
-            'parent_of_active_item' => '__item--parent--active',
-            'ancestor_of_active_item' => '__item--ancestor-active',
+            'active_item' => '__item--current',
+            'parent_of_active_item' => '__item--parent--current',
+            'ancestor_of_active_item' => '__item--ancestor-current',
             'sub_menu' => '__sub-list',
             'sub_menu_item' => '__sub-item',
             'sub_link' => '__sub-link',
@@ -59,9 +59,9 @@ class walker_texas_ranger extends Walker_Nav_Menu {
 
         $class_names = implode(' ', $classes);
 
-        // Add a ul wrapper to sub nav
+        // Add a ul wrapper to sub nav and a button to trigger the sub navigation items on mobile
 
-        $output .= "\n" . $indent . '<ul class="' . $class_names . '">' . "\n";
+        $output .= "\n" . $indent . '<button class="' . $prefix . '__sub-trigger">Open</button><ul class="' . $class_names . '">' . "\n";
     }
 
     // Add main/sub classes to li's and links
