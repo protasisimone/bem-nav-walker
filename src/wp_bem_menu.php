@@ -15,16 +15,16 @@ class walker_texas_ranger extends Walker_Nav_Menu {
         // Define menu item names appropriately
 
         $this->item_css_class_suffixes = array(
-            'list' => '__list',
+            'list' => '__items',
             'item' => '__item',
             'link' => '__link',
             'parent_item' => '__item--parent',
             'active_item' => '__item--current',
             'parent_of_active_item' => '__item--parent--current',
             'ancestor_of_active_item' => '__item--ancestor-current',
-            'sub_menu' => '__sub-list',
-            'sub_menu_item' => '__sub-item',
-            'sub_link' => '__sub-link',
+            'sub_menu' => '__subList',
+            'sub_menu_item' => '__subItem',
+            'sub_link' => '__subLink',
         );
 
     }
@@ -150,7 +150,7 @@ function bem_menu($location = "main_menu", $css_class_prefix = 'main-menu', $css
     $args = array(
         'theme_location' => $location,
         'container' => false,
-        'items_wrap' => '<ul class="' . $css_class_prefix . '__list ' . $modifiers . '">%3$s</ul>',
+        'items_wrap' => '<ul class="' . $css_class_prefix . '__items ' . $modifiers . '">%3$s</ul>',
         'walker' => new walker_texas_ranger($css_class_prefix, true)
     );
 
